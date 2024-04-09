@@ -8,4 +8,6 @@ export default defineConfig({
   devToolbar: {
     enabled: false,
   },
+  site: 'https://AlonsoMartinez8.github.io',
+  base: '/deployAstro',
 });
