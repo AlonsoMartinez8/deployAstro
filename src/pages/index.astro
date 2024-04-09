@@ -1,11 +1,41 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 ---
 
 <Layout title="Deploy Astro">
-	<main class="min-h-screen">
-		<h1 class="text-4xl font-bold opacity-70 text-center pt-14">Deploy Astro to GitHub Pages</h1>
+	<main class="min-h-screen flex flex-col justify-start items-start max-w-[900px] m-auto gap-4 p-6">
+		<h1 class="w-full text-4xl font-bold opacity-90 text-center">Deploy Astro to GitHub Pages</h1>
+		<h2 class="text-2xl text-red-300/80 font-bold">1. GitHub Repositoy</h2>
+		<p class="text-sm opacity-90 ml-5">
+			Create a new GitHub repository
+		</p>
+		<h2 class="text-2xl text-red-300/80 font-bold">2. Astro Config</h2>
+		<p class="text-sm opacity-90 ml-5">
+			Add <b>Site</b> and <b>Base</b> to <em>astro.config.mjs</em> file
+		</p>
+		<h2 class="text-2xl text-red-300/80 font-bold">3. Workflow</h2>
+		<ul>
+			<li class="list-disc ml-5">Create folder <em>.github</em></li>
+			<li class="list-disc ml-5">Inside <em>.github</em> create folder <em>workflows</em></li>
+			<li class="list-disc ml-5">Inside <em>workflows</em> create file <em>deploy.yml</em></li>
+			<li class="list-disc ml-5">Paste the YAML code given in this repo into this file</li>
+		</ul>
+		<p class="text-sm opacity-90 ml-5">
+			<span class="bg-slate-600/80 p-2 text-slate-200">.github/workflows/deploy.yml</span>
+		</p>
+		<h2 class="text-2xl text-red-300/80 font-bold">4. Configure GitHub</h2>
+		<p class="text-sm opacity-90 ml-5">
+
+In your repository:
+		</p>
+		<ul>
+			<li class="list-disc ml-5">Go to <em>Settings</em> - <em>Pages</em></li>
+			<li class="list-disc ml-5">Set <em>Source</em> as <b>GitHub Actions</b></li>
+			<li class="list-disc ml-5">Push your local repository to remote</li>
+		</ul>
+		<p class="text-sm opacity-90 ml-5">
+			<span class="bg-slate-600/80 p-2 text-slate-200">In *Actions* you will be able to get the URL of your site</span>
+		</p>
 	</main>
 </Layout>
 
