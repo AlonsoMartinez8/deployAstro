@@ -1,7 +1,7 @@
 # Deploy Astro to GitHub Pages
 Steps:
 
-## GitHub Repositoy
+## 1. GitHub Repositoy
 Create a new GitHub repository
 
 ## 2. Astro Config
